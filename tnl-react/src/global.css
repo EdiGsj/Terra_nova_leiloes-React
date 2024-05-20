@@ -1,3 +1,7 @@
 body{
     margin: 0;
-}
+    background-image: url('https://th.bing.com/th/id/R.9c10336772a8906f4d628a628b80e6ed?rik=TiiWkIAyZxWygQ&pid=ImgRaw&r=0');
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed
+};
