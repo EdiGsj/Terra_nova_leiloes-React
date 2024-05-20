@@ -1,149 +1,84 @@
-import Tnl_header from "./components/header/Styles"
-import Tnl_portal from "./components/portal/Styles"
 import logo1 from './assets/Terra Nova Leilões Logo Black.jpg'
-import Icon_hamer from "./components/icon_hammer/Styles"
-import Tnl_nav from "./components/nav/Styles"
-import Tnl_footer from "./components/footer/Styles"
-import Div_overflow from "./components/div_ovrflow/Styles"
-import Tnl_section from "./components/sections/Styles"
+import cow_icon from './assets/cow.png'
+import hammer_icon from './assets/gavel.png'
+import earth_icon from './assets/earth.png'
+
+import call_icon from './assets/phone-call.png'
+import milk_icon from './assets/milk.png'
+import live_icon from './assets/live-streaming.png'
+import icon_hammer from './assets/HammerIcon.jpg'
+
+import cow_portal_image from './assets/cowPortal.jpg'
+
+import Tnl_header from './components/header/Styles'
+import Tnl_portal from './components/portal/Styles'
+import Tnl_nav from './components/nav/Styles'
+import Tnl_footer from './components/footer/Styles'
+
+import Div_overflow from './components/div_ovrflow/Styles'
+import Tnl_section from './components/sections/Styles'
 
 function App() {
+
+  function div_create() {
+    const paragraph = []
+
+    for(let i = 0; i <20; i++ ){
+      paragraph.push(<div style={{
+        width: '90%', 
+        height: '50px', 
+        backgroundColor: 'white', 
+        borderRadius: '0px 20px 20px 0px',
+        margin: '10px'
+      }} key={i}></div>)
+    };
+    return(
+      paragraph
+    );
+  };
+
+
   return (
     <>
       <div className='Master'>
         <Tnl_header>
-          <img src={logo1} alt="" />
+          <img src={logo1} alt='tnlLogo' />
           <h1>Bons Negócios na Batida do Martelo</h1>
         </Tnl_header>
 
         <Tnl_portal>
-          <img src="https://i.pinimg.com/236x/05/12/52/0512526607c37b3565bdefebdde12cb5.jpg" alt="icon" />
-          <Icon_hamer></Icon_hamer>
-          <img style={{transform: 'scaleX(-1)'}} 
-          src="https://i.pinimg.com/236x/05/12/52/0512526607c37b3565bdefebdde12cb5.jpg" alt="mirrosIcon" />
+          <img src={cow_portal_image} alt='icon' />
+          <img src={icon_hammer} alt="iconHammer" />
+          <img style={{transform: 'scalex(-1)'}} 
+          src={cow_portal_image} alt='mirrosIcon' />
         </Tnl_portal>
         
-        <Tnl_nav>
-          <div>A</div>
-          <div>B</div>
-          <div>C</div>
-          <div>D</div>
-          <div>E</div>
-          <div>F</div>
-        </Tnl_nav>
+
+          <Tnl_nav>
+              <div><img src={cow_icon} alt='cow' /></div>
+              <div><img src={milk_icon} alt='milk' /></div>
+              <div><img src={earth_icon} alt='land' /></div>
+              <div><img src={hammer_icon} alt='hammer' /></div>
+              <div><img src={live_icon} alt='live' /></div>
+              <div><img src={call_icon} alt='call' /></div>
+          </Tnl_nav>
 
 
         <main style={{
-          height: '500px', 
           }}>
 
-          <section id='carrossel'>
-            <h1>Conteúdo</h1>
-          </section>
+          <section id='carrossel'></section>
+
           <Tnl_section id='us'>
+            
             <Div_overflow>
-              <p>
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-
-              </p>
+              {div_create()}
             </Div_overflow>
 
             <Div_overflow>
-              <p>
-              Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-                Terra Nova Leilões
-
-              </p>
+              {div_create()}
             </Div_overflow>
+
           </Tnl_section>
 
           <section id='events'></section>
@@ -152,8 +87,8 @@ function App() {
         <Tnl_footer>
           <ul>
             <li>Contato: terranovaleiloes@gmail.com</li>
-            <li><a href="">Site parceiros</a></li>
-            <li><a href="">Contatos para cadastro</a></li>
+            <li><a href=''>Site parceiros</a></li>
+            <li><a href=''>Contatos para cadastro</a></li>
             <li>todososdireitosreservados@EdimarGonçalves2024</li>
           </ul>
         </Tnl_footer>
