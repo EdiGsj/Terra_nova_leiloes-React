@@ -4,10 +4,10 @@ const Tnl_footer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 10vh;
     background-color: black;
     color: white;
-    height: 350px;
+    height: 300px;
     opacity: 0.5;
     font-size: 3vmin;
 `;
