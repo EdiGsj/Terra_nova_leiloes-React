@@ -2,12 +2,10 @@ import logo1 from './assets/Terra Nova Leilões Logo Black.jpg'
 import cow_icon from './assets/cow.png'
 import hammer_icon from './assets/gavel.png'
 import earth_icon from './assets/earth.png'
-
 import call_icon from './assets/phone-call.png'
 import milk_icon from './assets/milk.png'
 import live_icon from './assets/live-streaming.png'
 import icon_hammer from './assets/HammerIcon.jpg'
-
 import cow_portal_image from './assets/cowPortal.jpg'
 
 import Tnl_header from './components/header/Styles'
@@ -17,6 +15,10 @@ import Tnl_footer from './components/footer/Styles'
 
 import Div_overflow from './components/div_ovrflow/Styles'
 import Tnl_section from './components/sections/Styles'
+import insta_icon from './assets/insta.png'
+import linkedin_icon from './assets/social.png'
+import github_icon from './assets/github icon.png'
+import Carrossel from './components/carrossel'
 
 function App() {
 
@@ -48,7 +50,7 @@ function App() {
 
         <Tnl_portal>
           <img src={cow_portal_image} alt='icon' />
-          <img src={icon_hammer} alt="iconHammer" />
+          <img src={icon_hammer} alt='iconHammer' />
           <img style={{transform: 'scalex(-1)'}} 
           src={cow_portal_image} alt='mirrosIcon' />
         </Tnl_portal>
@@ -67,7 +69,9 @@ function App() {
         <main style={{
           }}>
 
-          <section id='carrossel'></section>
+          <section id='carrossel'>
+            <Carrossel/>
+          </section>
 
           <Tnl_section id='us'>
             
@@ -85,12 +89,16 @@ function App() {
         </main>
 
         <Tnl_footer>
-          <ul>
-            <li>Contato: terranovaleiloes@gmail.com</li>
-            <li><a href=''>Site parceiros</a></li>
-            <li><a href=''>Contatos para cadastro</a></li>
-            <li>todososdireitosreservados@EdimarGonçalves2024</li>
-          </ul>
+          <div>
+            <h5><a href=''>Outros Sites</a></h5>
+            <h5><a href=''>Contatos</a></h5>
+            <h5><a href=''>Dev</a></h5>
+          </div>
+          <div>
+            <img src={github_icon} alt='github' />
+            <img src={linkedin_icon} alt='linkedin' />
+            <img src={insta_icon} alt='instagram' />
+          </div>
         </Tnl_footer>
         
       </div>

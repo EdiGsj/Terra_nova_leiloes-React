@@ -5,8 +5,9 @@ const Tnl_nav = styled.nav`
     justify-content: space-around;
     background-color: rgb(6,225,10);
     height: 80px;
+    overflow: hidden;
     border-top: solid black 2px;
-    box-shadow: inset 0px 0px 10px greenyellow;
+
 
     & > div {
 
