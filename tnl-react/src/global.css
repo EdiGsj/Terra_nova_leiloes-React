@@ -1,9 +1,10 @@
 body{
     margin: 0;
-    background-image: url('./assets/Background1.jpg');
+    background-image: url('./assets/images/Background1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    overflow-x: hidden
 };
 
