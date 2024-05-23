@@ -16,12 +16,12 @@ const Div_overflow = styled.div`
         border-radius: 5% ;
         background: inherit;
         border-radius: 50px;
-    }
+    };
 
     &::-webkit-scrollbar-thumb{
         background-color: black;
         border-radius: 50px;
-    }
+    };
 `;
 
 export default Div_overflow
